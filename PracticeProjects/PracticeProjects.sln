@@ -3,9 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderPattern", "BuilderPattern\BuilderPattern.csproj", "{221538CA-3FCB-4827-9258-7AE65FBD654F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuilderPattern", "BuilderPattern\BuilderPattern.csproj", "{221538CA-3FCB-4827-9258-7AE65FBD654F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Patterns", "Patterns", "{5E161CCA-F00A-42F1-BEF8-0AB5FA914986}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7_Features", "7_Features", "{FF94FC3B-6542-4B38-96AD-E05166F38B90}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "8_Features", "8_Features", "{A4F9747C-4A5E-4023-BBFA-ACE193C1EB3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "9_Features", "9_Features", "{94FC1146-C58C-4CE5-98C3-642E79D14D1C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Async_and_Parallel_Programing", "Async_and_Parallel_Programing", "{8883AA0F-A532-4357-87FE-A8490612E0DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EntityFrameworkCore", "EntityFrameworkCore", "{B4736BB4-96D6-4B0A-AE08-E3C3DEFD475B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Linq", "Linq", "{A4110623-A7AD-4731-B7BA-46F69C2C6A37}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LanguageStuff", "LanguageStuff", "{77059B6E-10ED-495C-AE5E-D0850BC19C20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threads", "Threads\Threads.csproj", "{6798620E-1471-40FD-BA6A-45D2E87C9F3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +33,17 @@ Global
 		{221538CA-3FCB-4827-9258-7AE65FBD654F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{221538CA-3FCB-4827-9258-7AE65FBD654F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{221538CA-3FCB-4827-9258-7AE65FBD654F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6798620E-1471-40FD-BA6A-45D2E87C9F3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6798620E-1471-40FD-BA6A-45D2E87C9F3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6798620E-1471-40FD-BA6A-45D2E87C9F3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6798620E-1471-40FD-BA6A-45D2E87C9F3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{221538CA-3FCB-4827-9258-7AE65FBD654F} = {5E161CCA-F00A-42F1-BEF8-0AB5FA914986}
+		{6798620E-1471-40FD-BA6A-45D2E87C9F3D} = {8883AA0F-A532-4357-87FE-A8490612E0DA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {28A2FA2D-5ACC-4D2C-B0EA-B3DF53387D19}
