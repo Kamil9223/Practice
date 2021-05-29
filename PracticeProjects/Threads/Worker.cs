@@ -9,21 +9,22 @@ namespace Threads
     {
         private const int TasksPerThread = 5;
 
-        public List<Thread> CreateThreads(IEnumerable<Action> tasks)
+        public List<ThreadWrapper> CreateThreads(IEnumerable<Action> tasks)
         {
             var numberOfThreads = CalculateNumberOfThreads(tasks.Count());
 
-            var threads = new List<Thread>(numberOfThreads);
+            var threads = new List<ThreadWrapper>(numberOfThreads);
             for (int i = 0; i< numberOfThreads; i++)
             {
                 var selectedTasks = tasks.Skip(i * TasksPerThread)
                                          .Take(TasksPerThread)
                                          .ToList();
 
-                threads.Add(new Thread(() =>
+                threads.Add(new ThreadWrapper(
+                    new Thread(() =>
                 {
                     selectedTasks.ForEach(x => x.Invoke());
-                }));
+                }), i+1));
             }
 
             return threads;

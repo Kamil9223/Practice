@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-using System.Threading;
 
 namespace Threads
 {
@@ -13,10 +12,17 @@ namespace Threads
             var lockObj = new object();
 
             var sampleTasks = taskGenerator.GetSampleTasks().ToList();
-            var threads = worker.CreateThreads(sampleTasks);
+            var threadsWrappers = worker.CreateThreads(sampleTasks);
 
-            threads.ForEach(thread => thread.Start());
-            threads.ForEach(thread => thread.Join());                 
+            //uruchamianie wątków jeden po drugim
+            //foreach(var threadWrapper in threadsWrappers)
+            //{
+            //    threadWrapper.Thread.Start();
+            //    threadWrapper.Thread.Join();
+            //}
+
+            threadsWrappers.ForEach(tw => tw.Thread.Start());
+            threadsWrappers.ForEach(tw => tw.Thread.Join());
 
             Console.WriteLine("End Of Main Thread!");
         }
